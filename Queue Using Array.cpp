@@ -2,22 +2,19 @@
 using namespace std;
 int q[5];
 int front=-1,rear=0;
-void push()
-{
+void push(){
 	if(rear==5)
 		cout<<"\n\t!!! Queue is OVERFLOW !!!";
 	else
 	{
-        if(front==-1)
-            front=0;
+        	if(front==-1)
+            		front=0;
 		cout<<"\nEnter Data to Queue  ";cin>>q[rear];
 		cout<<"\n"<<q[rear]<<" added to Queue ";
-        ++rear;
+       		++rear;
 	}
 }
-
-void pop()
-{
+void pop(){
 	if(front==-1 || front>=rear)
 		cout<<"\n\t!!! Queue is UNDERFLOW !!!";
 	else
@@ -27,17 +24,13 @@ void pop()
 		front++;
 	}
 }
-
-void peek()
-{
+void peek(){
 	if(front==-1 || front>=rear)
 		cout<<"\n\t!!! Queue UNDERFLOW !!!";
 	else
 		cout<<"\nTop Element : "<<q[front];
 }
-
-void display()
-{
+void display(){
 	if(front==-1 || front==rear) 
 		cout<<"\n\t!!! Queue UNDERFLOW !!!";
 	else
@@ -50,11 +43,9 @@ void display()
 		}
 	}
 }
-int main() 
-{
+int main() {
 	int choice;
-	do
-	{
+	do{
 		cout<<"\n~~~ MENU ~~~\n1.PUSH\t2.POP\t3.Peek\t4.Display\t5.Exit\n ";
 		cin>>choice;
 		switch(choice)
