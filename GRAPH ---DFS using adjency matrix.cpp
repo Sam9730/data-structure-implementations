@@ -3,8 +3,7 @@ using namespace std;
 int adj[20][20],n,m,top=-1,k,j,i;
 int *stack=new int(n);			 
 int *visited=new int(n+1);
-int dfs(int t)
-{
+int dfs(int t){
 	cout<<"->"<<t;
 	visited[t]=1;
 	stack[++top]=t;
@@ -14,12 +13,9 @@ int dfs(int t)
 			dfs(l);
 	}
 	top--;
-	
 	return 0;
 }
-
-int main()
-{
+int main(){
 	int v;
 	cout<<"\nEnter no. of Vertex ";cin>>n;
 	cout<<"\nEnter no. of Edges ";cin>>m;
