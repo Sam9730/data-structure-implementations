@@ -1,17 +1,14 @@
 #include <iostream>
 using namespace std;
-class node
-{
+class node{
 	public:
 	int data;
 	node *next;
 };
-void push(node** head)
-{
+void push(node** head){
 	node *newnode=new node();
 	node *temp=*head;
 	cout<<"\nEnter data \t";cin>>newnode->data;
-
 	if(*head==0)
 	{
 		*head=newnode;
@@ -19,55 +16,47 @@ void push(node** head)
 	}
 	else
 	{
-	while(temp->next!=*head)
-		temp=temp->next;
-	temp->next=newnode;
-	newnode->next=*head;
-	*head=newnode;
+		while(temp->next!=*head)
+			temp=temp->next;
+		temp->next=newnode;
+		newnode->next=*head;
+		*head=newnode;
 	}
 	cout<<"\n"<<newnode->data<<" added to link list\n";
 }
-
-void insertAt(node** head)
-{
+void insertAt(node** head){
 	int pos,c=1;
 	node *newnode=new node();
 	cout<<"\nEnter data \t";cin>>newnode->data;
 	cout<<"\nEnter position at which you want to insert data\t";cin>>pos;
 	if(*head==0)
-	{
 		*head=newnode;
-	}
 	else
 	{
 		node *temp=*head,*prev;
 		while(c<pos)
 		{
-				prev=temp;
-				temp=temp->next;
-				c++;
+			prev=temp;
+			temp=temp->next;
+			c++;
 		}
 		newnode->next=temp;
 		prev->next=newnode;
 	}
 	cout<<"\n"<<newnode->data<<" added to link list\n";
 }
-void append(node** head)
-{
+void append(node** head){
 	node *newnode=new node();
 	cout<<"\nEnter data \t";cin>>newnode->data;
 	newnode->next=0;
-		node *temp=*head;
-		while(temp->next!=*head)
-			temp=temp->next;
-		temp->next=newnode;
-		newnode->next=*head;
-		
+	node *temp=*head;
+	while(temp->next!=*head)
+		temp=temp->next;
+	temp->next=newnode;
+	newnode->next=*head;	
 	cout<<"\n"<<newnode->data<<" added to link list\n";
 }
-
-void deleteNode(node** head)
-{
+void deleteNode(node** head){
 	node *temp=*head,*pre=*head;
 	int key;
 	cout<<"\nEnter Data to delete \t";cin>>key;
@@ -100,9 +89,7 @@ void deleteNode(node** head)
 		cout<<"\n 3 !!! ~~~ Data deleted ~~~ !!!";
 	}
 }
-
-void display(node** head)
-{
+void display(node** head){
 	node *temp=*head;
 	cout<<"\n\tList is : ";
 	while(temp->next!=*head)
@@ -112,9 +99,7 @@ void display(node** head)
 	}
 	cout<<temp->data<<" ";
 }
-
-int main() 
-{
+int main() {
 	int choice,i;
 	node *head=0;
 	while(choice!=5)
