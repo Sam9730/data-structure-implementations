@@ -5,9 +5,7 @@ class node{
 	int data;
 	node *left,*right;
 };
-
-node* insert(node *root,int data)
-{
+node* insert(node *root,int data){
 	if(root==0)
 	{
 		node *newnode=new node();
@@ -17,43 +15,32 @@ node* insert(node *root,int data)
 		return newnode;
 	}
 	else if(root->data<data)
-	{
 		root->right=insert(root->right,data);
-	}
 	else
-	{
 		root->left=insert(root->left,data);
-	}
-		return root;
+	return root;
 }
-
-void preorder(node* root)
-{
+void preorder(node* root){
 	if(root==0)
 		return ;
 	cout<<" "<<root->data;
-		preorder(root->left);
-		preorder(root->right);
+	preorder(root->left);
+	preorder(root->right);
 }
-
-void inorder(node* root)
-{
+void inorder(node* root){
 	if(root==0)
 		return ;
 	inorder(root->left);
 	cout<<" "<<root->data;
 	inorder(root->right);
 }
-
-void postorder(node* root)
-{
+void postorder(node* root){
 	if(root==0)
 		return ;
 	postorder(root->left);
 	postorder(root->right);
 	cout<<" "<<root->data;
 }
-
 int main() {
 	node *root=0;
 	root=insert(root,100);
