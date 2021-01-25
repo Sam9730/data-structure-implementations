@@ -1,15 +1,12 @@
 #include <iostream>
 using namespace std;
-class node
-{
+class node{
 	public:
 	int data;
 	node *pre;
 	node *next;
 };
-
-void push(node** head)
-{
+void push(node** head){
 	node *newnode=new node();
 	cout<<"\nEnter data \t";cin>>newnode->data;
 	newnode->pre=0;
@@ -17,9 +14,7 @@ void push(node** head)
 	*head=newnode;
 	cout<<"\n"<<newnode->data<<" added to link list\n";
 }
-
-void insertAt(node** head)
-{
+void insertAt(node** head){
 	int pos,c=1;
 	node *newnode=new node();
 	cout<<"\nEnter data \t";cin>>newnode->data;
@@ -33,9 +28,9 @@ void insertAt(node** head)
 		node *temp=*head,*prev;
 		while(c<pos)
 		{
-				prev=temp;
-				temp=temp->next;
-				c++;
+			prev=temp;
+			temp=temp->next;
+			c++;
 		}
 		newnode->pre=prev;
 		newnode->next=temp;
@@ -44,9 +39,7 @@ void insertAt(node** head)
 	}
 	cout<<"\n"<<newnode->data<<" added to link list\n";
 }
-
-void append(node** head)
-{
+void append(node** head){
 	node *newnode=new node();
 	cout<<"\nEnter data \t";cin>>newnode->data;
 	newnode->pre=0;
@@ -63,16 +56,12 @@ void append(node** head)
 	}
 	cout<<"\n"<<newnode->data<<" added to link list\n";
 }
-
-void deleteNode(node** head)
-{
+void deleteNode(node** head){
 	node *temp=*head;
 	int key;
 	cout<<"\nEnter Data to delete \t";cin>>key;
 	while(temp!=0 && temp->data!=key)
-	{
 		temp=temp->next;
-	}
 	if(temp==0)
 		cout<<"\n !!! ~~~ Data not found ~~~ !!!";
 	else
@@ -84,9 +73,7 @@ void deleteNode(node** head)
 		cout<<"\n Node Deleted ";
 	}
 }
-
-void reverse(node** head)
-{
+void reverse(node** head){
 	node*temp=*head,*t;
 	while(temp!=0)
 	{
@@ -97,9 +84,7 @@ void reverse(node** head)
 	}
 	*head=t->pre;
 }
-
-void display(node** head)
-{
+void display(node** head){
 	node *temp=*head;
 	cout<<"\n\tList is : ";
 	while(temp!=0)
@@ -108,9 +93,7 @@ void display(node** head)
 		temp=temp->next;
 	}
 }
-
-int main() 
-{
+int main() {
 	int choice,i;
 	node *head=0;
 	while(choice!=5)
