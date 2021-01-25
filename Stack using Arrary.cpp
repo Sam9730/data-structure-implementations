@@ -2,8 +2,7 @@
 using namespace std;
 int *stack,n;
 int top=-1;
-void push()
-{
+void push(){
 	if(top==n-1)
 		cout<<"\n\t!!! STACK OVERFLOW !!!";
 	else
@@ -13,9 +12,7 @@ void push()
 		cout<<"\n"<<stack[top]<<" added to STACK ";
 	}
 }
-
-void pop()
-{
+void pop(){
 	if(top==-1)
 		cout<<"\n\t!!! STACK UNDERFLOW !!!";
 	else
@@ -24,17 +21,13 @@ void pop()
 		top--;
 	}
 }
-
-void peek()
-{
+void peek(){
 	if(top==-1)
 		cout<<"\n\t!!! STACK UNDERFLOW !!!";
 	else
 		cout<<"\nTop Element : "<<stack[top];
 }
-
-void display()
-{
+void display(){
 	if(top==-1)
 		cout<<"\n\t!!! STACK UNDERFLOW !!!";
 	else
@@ -47,13 +40,11 @@ void display()
 		}
 	}
 }
-int main() 
-{
+int main(){
 	cout<<"\nEnter Size of Stack : ";cin>>n;
 	stack=new int(n);
 	int choice;
-	do
-	{
+	do{
 		cout<<"\n~~~ MENU ~~~\n1.PUSH\t2.POP\t3.Peek\t4.Display\t5.Exit\n ";
 		cin>>choice;
 		switch(choice)
