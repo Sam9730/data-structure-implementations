@@ -1,41 +1,32 @@
 #include<iostream>
 using namespace std;
-class node
-{
+class node{
 	public:
 	int data;
 	node *left,*right;
 };
-
-void inorder(node *root)
-{
+void inorder(node *root){
 	if(root==0)
 		return ;
 	inorder(root->left);
 	cout<<" "<<root->data;
 	inorder(root->right);
 }
-
-void preorder(node *root)
-{
+void preorder(node *root){
 	if(root==0)
 		return ;
 	cout<<" "<<root->data;
 	preorder(root->left);
 	preorder(root->right);
 }
-
-void postorder(node *root)
-{
+void postorder(node *root){
 	if(root==0)
 		return ;
 	postorder(root->left);
 	postorder(root->right);
 	cout<<" "<<root->data;
 }
-
-node* creat()
-{
+node* creat(){
 	int x;
 	cout<<"\nEnter Data(-1 for no node)  ";cin>>x;
 	if(x==-1)
@@ -47,13 +38,10 @@ node* creat()
 	newnode->left=creat();
 	cout<<"\nEnter right child of "<<x;
 	newnode->right=creat();
-	
 	return newnode;
 }
-int main()
-{
+int main(){
 	node *root=0;
-	
 	root=creat();
 	cout<<"\nInorder Traversal : ";
 	inorder(root);
