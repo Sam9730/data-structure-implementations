@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-
-int main()
-{
+int main(){
 	int adj[10][10],n,m,v;
 	cout<<"\nEnter no. of Vertex ";cin>>n;
 	cout<<"\nEnter no. of Edges ";cin>>m;
@@ -35,6 +33,5 @@ int main()
 		v=q[++front];
 		k++;
 	}
-	
 	return 0;
 }
