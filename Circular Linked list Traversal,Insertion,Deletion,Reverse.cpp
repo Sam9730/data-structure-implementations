@@ -73,7 +73,7 @@ void deleteNode(node** head){
 	{
 		pre->next=*head;
 		delete temp;
-		cout<<"\n 1 !!! ~~~ Data deleted ~~~ !!!";
+		cout<<"\n!!! ~~~ Data deleted ~~~ !!!";
 	}
 	else if(temp==*head && temp->data==key)
 	{
@@ -82,13 +82,13 @@ void deleteNode(node** head){
 		temp->next=pre->next;
 		*head=pre->next;
 		delete pre;
-		cout<<"\n 2 !!! ~~~ Data deleted ~~~ !!!";
+		cout<<"\n!!! ~~~ Data deleted ~~~ !!!";
 	}
 	else if(temp!=*head)
 	{
 		pre->next=temp->next;
 		delete temp;
-		cout<<"\n 3 !!! ~~~ Data deleted ~~~ !!!";
+		cout<<"\n!!! ~~~ Data deleted ~~~ !!!";
 	}
 }
 void display(node** head){
