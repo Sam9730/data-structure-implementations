@@ -33,8 +33,9 @@ void append(node** head){
 	node *temp=*head;
 	node *newnode=new node();
 	cout<<"\nEnter Data\t";cin>>newnode->data;
-	while(temp->next!=0)
+	while(temp->next!=0){
 		temp=temp->next;
+	}
 	newnode->next=0;
 	temp->next=newnode;
 	cout<<"\nNode added \n";
@@ -99,5 +100,4 @@ int main(){
 			case 5:cout<<"\n~~~~ THANK YOU ~~~~";break;
 		}
 	}
-
 }
