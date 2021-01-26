@@ -34,8 +34,7 @@ void display(){
 	{
 		int i;
 		cout<<"\nSTACK : ";
-		for(i=top;i>=0;i--)
-		{
+		for(i=top;i>=0;i--){
 			cout<<"\n"<<stack[i];
 		}
 	}
