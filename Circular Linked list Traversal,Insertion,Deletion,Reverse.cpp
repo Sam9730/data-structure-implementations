@@ -16,8 +16,9 @@ void push(node** head){
 	}
 	else
 	{
-		while(temp->next!=*head)
+		while(temp->next!=*head){
 			temp=temp->next;
+		}
 		temp->next=newnode;
 		newnode->next=*head;
 		*head=newnode;
@@ -50,8 +51,9 @@ void append(node** head){
 	cout<<"\nEnter data \t";cin>>newnode->data;
 	newnode->next=0;
 	node *temp=*head;
-	while(temp->next!=*head)
+	while(temp->next!=*head){
 		temp=temp->next;
+	}
 	temp->next=newnode;
 	newnode->next=*head;	
 	cout<<"\n"<<newnode->data<<" added to link list\n";
