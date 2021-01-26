@@ -10,32 +10,32 @@ The programming language used to implement these sorting algorithms is C++.
  
 ## Array : 
 * [All operation](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Array%20All%20Operations.cpp)
-
+https://github.com/sameerkhan97/data-structure-implementations/blob/master/Circular%20Linked%20list%20Traversal%2CInsertion%2CDeletion%2CReverse.cpp
 ## Linked List :
-* [Singly Linked List](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Singly%20Linked%20list%20Traversal%2CInsertion%2CDeletion%2CReverse.cpp)
-* [Doubly Linked List](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Doubly%20Linked%20list%20Traversal%2CInsertion%2CDeletion%2CReverse.cpp)
-* [Circular Linked List](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Circular%20Linked%20list%20Traversal%2CInsertion%2CDeletion%2CReverse.cpp)
+* [Singly Linked List](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Singly%20Linked%20list%20Traversal%2CInsertion%2CDeletion%2CReverse.cpp)
+* [Doubly Linked List](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Doubly%20Linked%20list%20Traversal%2CInsertion%2CDeletion%2CReverse.cpp)
+* [Circular Linked List](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Circular%20Linked%20list%20Traversal%2CInsertion%2CDeletion%2CReverse.cpp)
 
 ## STACK : 
-* [Using Array](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Stack%20using%20Arrary.cpp)
-* [Using Linked List](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Stack%20using%20Linked%20List.cpp)
+* [Using Array](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Stack%20using%20Arrary.cpp)
+* [Using Linked List](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Stack%20using%20Linked%20List.cpp)
 
 ## QUEUE :
-* [Using Array](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Queue%20Using%20Array.cpp)
-* [Using Linked List](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Queue%20Using%20LL.cpp)
+* [Using Array](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Queue%20Using%20Array.cpp)
+* [Using Linked List](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Queue%20Using%20LL.cpp)
 
 ## Binary Tree :
-* [Insertion](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Binary%20Tree%20Insertion.cpp)
-* [Traversal(Inorder,Preorder,Post Order)](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Binary%20Tree%20Insertion%2CInorder%2CPreorde%2CPostorder%20Traversal.cpp)
+* [Insertion](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Tree%20Insertion.cpp)
+* [Traversal(Inorder,Preorder,Post Order)](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Tree%20Insertion%2CInorder%2CPreorde%2CPostorder%20Traversal.cpp)
 
 ## Binary Search Tree :
-* [Insertion and Traversals(Inorder,Preorder,Postorder)](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Binary%20Search%20Tree%20Insertion%2CAll%20Order%20Traversal.cpp)
-* [Deletion (All Cases)](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Binary%20Search%20Tree%20deletion(all%20cases).cpp)
-* [Deletion (Replacing by Rightmost Node](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Binary%20Search%20Tree%20Deletion(replacing%20by%20rightmost%20node).cpp)
+* [Insertion and Traversals(Inorder,Preorder,Postorder)](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Search%20Tree%20Insertion%2CAll%20Order%20Traversal.cpp)
+* [Deletion (All Cases)](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Search%20Tree%20deletion(all%20cases).cpp)
+* [Deletion (Replacing by Rightmost Node](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Search%20Tree%20Deletion(replacing%20by%20rightmost%20node).cpp)
 
 ## GRAPH
-* [Breadth First Search (BFS) Traversal](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/GRAPH%20---BFS%20using%20adjency%20matrix.cpp)
-* [Depth First Search (DFS) Traversal](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/GRAPH%20---DFS%20using%20adjency%20matrix.cpp)
+* [Breadth First Search (BFS) Traversal](https://github.com/sameerkhan97/data-structure-implementations/blob/master/GRAPH%20---BFS%20using%20adjency%20matrix.cpp)
+* [Depth First Search (DFS) Traversal](https://github.com/sameerkhan97/data-structure-implementations/blob/master/GRAPH%20---DFS%20using%20adjency%20matrix.cpp)
 
 # HASH TABLE
-* [All Operations](https://github.com/sameerkhan97/DATA-STRUCTURES-IMPLEMENTATIONS/blob/master/Insert%2CDelete%2CSearch%20%20in%20HASH%20TABLE.cpp)
+* [All Operations](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Insert%2CDelete%2CSearch%20%20in%20HASH%20TABLE.cpp)
