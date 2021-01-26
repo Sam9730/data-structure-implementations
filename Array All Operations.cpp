@@ -48,17 +48,16 @@ void search(){
 void display(){
 	cout<<"\nArray : ";
 	for(int i=0;i<s;i++)
-	{
 		cout<<arr[i]<<" ";
-	}
 }
 int main() {
 	int ch;
 	cout<<"\nEnter Array Size : ";cin>>s;
 	arr=new int(s);
 	cout<<"\nEnter Array Elements : ";
-	for(int i=0;i<s;i++)
-		cin>>arr[i];	
+	for(int i=0;i<s;i++){
+		cin>>arr[i];
+	}
 	do{
 		cout<<"\n~~~\tMENU\t~~~\n1.Update\t2.Delete\t3.Search\t4.Display\t5.Exit\nEnter your choice";
 		cin>>ch;
