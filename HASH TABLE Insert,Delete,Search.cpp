@@ -8,8 +8,9 @@ void insert(){
 	int data,index;
 	cout<<"\nENter data to insert in Hash table ";cin>>data;
 	index=hashIndex(data);
-	while(hashArray[index]!=0 && index<size)
+	while(hashArray[index]!=0 && index<size){
 		index=(index+1)%size;
+	}
 	if(index==size)
 		cout<<"\nHASH TABLE is Full !!! ";
 	else
@@ -22,8 +23,9 @@ void search(){
 	int data,index;
 	cout<<"\nEnter data to be searched Hash table ";cin>>data;
 	index=hashIndex(data);	
-	while(hashArray[index]!=data && index<size)
+	while(hashArray[index]!=data && index<size){
 		index=(index+1)%size;
+	}
 	if(index==size)
 		cout<<"\nData is not presentin HASH TABLE";
 	else
@@ -33,8 +35,9 @@ void delet(){
 	int data,index;
 	cout<<"\nENter data to deleted from Hash table ";cin>>data;
 	index=hashIndex(data);	
-	while(hashArray[index]!=data && index<size)
+	while(hashArray[index]!=data && index<size){
 		index=(index+1)%size;
+	}
 	if(index==size)
 		cout<<"\nData is not presentin HASH TABLE";
 	else
