@@ -58,8 +58,9 @@ node* search(node* root,node** parent ,int data){
 void deleteNode(node *root,int data){
 	node *parent=0;
 	node *temp=search(root,&parent,data);
-	if(temp==0 || root==0)
+	if(temp==0 || root==0){
 		cout<<"\n"<<data<<" not found in tree.";
+	}
 	else if(temp->left==0 && temp->right==0)
 	{
 		if(temp!=root)
@@ -71,7 +72,6 @@ void deleteNode(node *root,int data){
 		}
 		else
 			root=0;
-		
 		delete temp;
 	}
 	//Inorder Succesor
@@ -85,7 +85,6 @@ void deleteNode(node *root,int data){
 		}
 		temp->data=t->data;
 		pret->left=0;
-		
 		delete t;
 	}
 	else if(temp->right!=0 || temp->left!=0)
