@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
 int size,*hashArray;
-int hashIndex(int key){
+int hashIndex(int key){	//function returns hass index for a particular hash key
 	return key%size;
 }
 void insert(){
 	int data,index;
 	cout<<"\nENter data to insert in Hash table ";cin>>data;
-	index=hashIndex(data);
-	while(hashArray[index]!=0 && index<size){
-		index=(index+1)%size;
+	index=hashIndex(data);	//hash index for the data 
+	while(hashArray[index]!=0 && index<size){	//check if hashindex is already occupied
+		index=(index+1)%size;	//if hash index is occupied then move till either we get empty index or array ends
 	}
-	if(index==size)
+	if(index==size)	
 		cout<<"\nHASH TABLE is Full !!! ";
-	else
+	else	//if found empty index then insert data at that position
 	{
 		hashArray[index]=data;
 		cout<<"\n"<<hashArray[index]<<" added to HASH TABLE ";
@@ -22,9 +22,9 @@ void insert(){
 void search(){
 	int data,index;
 	cout<<"\nEnter data to be searched Hash table ";cin>>data;
-	index=hashIndex(data);	
-	while(hashArray[index]!=data && index<size){
-		index=(index+1)%size;
+	index=hashIndex(data);	//index take hash value to find at what index data may be inserted.
+	while(hashArray[index]!=data && index<size){	//from hash index it serach data untill last index
+		index=(index+1)%size;	
 	}
 	if(index==size)
 		cout<<"\nData is not presentin HASH TABLE";
@@ -34,8 +34,8 @@ void search(){
 void delet(){
 	int data,index;
 	cout<<"\nENter data to deleted from Hash table ";cin>>data;
-	index=hashIndex(data);	
-	while(hashArray[index]!=data && index<size){
+	index=hashIndex(data);	//index take hash value to find at what index data may be inserted.
+	while(hashArray[index]!=data && index<size){ //from hash index it serach data untill last index
 		index=(index+1)%size;
 	}
 	if(index==size)
@@ -43,7 +43,7 @@ void delet(){
 	else
 	{
 		cout<<"\n"<<hashArray[index]<<" deleted ";
-		hashArray[index]=0;
+		hashArray[index]=0;	//when data is found it is replaced by 0.
 	}
 }
 void display(){
