@@ -31,7 +31,7 @@ void search(){
 	else
 		cout<<"\n"<<hashArray[index]<<" is present at "<<index<<"th Index of Hash function.";
 }
-void delet(){
+void delet() {
 	int data,index;
 	cout<<"\nENter data to deleted from Hash table ";cin>>data;
 	index=hashIndex(data);	//index take hash value to find at what index data may be inserted.
