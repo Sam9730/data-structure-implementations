@@ -31,8 +31,8 @@ void pop(node** head){
 	{
 		temp=temp->next;
 		c++;
-	}		//c will have count of number of nodes 
-	if(c==0)	//if linked list is empty
+	}		//c will have count of number of nodes .
+	if(c==0)	//if linked list is empty.
 		cout<<"\n\t!!! STACK UNDERFLOW !!!";
 	else	//node will be deleted from start i.e head 
 	{
