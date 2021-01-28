@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
-int size=5;
-struct node{
+int size=5;	//Size will be compared in every function so defining it globally
+struct node{	//will be used as node of a linked list 
 	int data;
 	node *next;
 };
 void push(node** head){
-	int c=0;
+	int c=0;	//c will count no. of nodes in linked link
 	node *temp=*head;
 	while(temp!=0)
 	{
 		temp=temp->next;
 		c++;
-	}
-	if(c==size)
+	}//c will have count of number of nodes 
+	if(c==size)	//if nodes==size i.e linked list is full
 		cout<<"\n\t!!! STACK OVERFLOW !!!";
-	else
+	else		//adding nodes @ start from head
 	{
 		node *newnode=new node();
 		cout<<"\nEnter data  ";cin>>newnode->data;
@@ -25,16 +25,16 @@ void push(node** head){
 	}
 }
 void pop(node** head){
-	int c=0;
+	int c=0;	//c will count no. of nodes in linked link
 	node *temp=*head;
 	while(temp!=0)
 	{
 		temp=temp->next;
 		c++;
-	}
-	if(c==0)
+	}		//c will have count of number of nodes 
+	if(c==0)	//if linked list is empty
 		cout<<"\n\t!!! STACK UNDERFLOW !!!";
-	else
+	else	//node will be deleted from start i.e head 
 	{
 		node *t=*head;
 		cout<<"\n"<<t->data<<" is deleted";
@@ -42,7 +42,7 @@ void pop(node** head){
 		delete t;
 	}
 }
-void peek(node** head){
+void peek(node** head){	//prints top element i.e Element at Head
 	int c=1;
 	node *temp=*head;
 	while(temp->next!=0)
