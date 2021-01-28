@@ -31,7 +31,7 @@ The programming language used to implement these sorting algorithms is C++.
 ## Binary Search Tree :
 * [Insertion and Traversals(Inorder,Preorder,Postorder)](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Search%20Tree%20Insertion%2CAll%20Order%20Traversal.cpp)
 * [Deletion (All Cases)](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Search%20Tree%20deletion(all%20cases).cpp)
-* [Deletion (Replacing by Rightmost Node](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Search%20Tree%20Deletion(replacing%20by%20rightmost%20node).cpp)
+* [Deletion (Replacing by Rightmost Node)](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Binary%20Search%20Tree%20Deletion(replacing%20by%20rightmost%20node).cpp)
 
 ## GRAPH
 * [Breadth First Search (BFS) Traversal](https://github.com/sameerkhan97/data-structure-implementations/blob/master/GRAPH%20---BFS%20using%20adjency%20matrix.cpp)
