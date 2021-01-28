@@ -5,6 +5,9 @@ class node{
 	int data;
 	node *left,*right;
 };
+/*func. will create nodes for left child of root by recursively calling itself untill user enter -1,then it will create nodes for right
+  child untill user again enters -1.
+  func will return node pointers of each subroot */
 node* creat(){
 	int x;
 	cout<<"\nEnter Data(-1 for no node)  ";cin>>x;
@@ -19,6 +22,6 @@ node* creat(){
 	return newnode;
 }
 int main(){
-	node *root=0;
-	root=creat();
+	node *root=0;	//created root pointer for tree	
+	root=creat();	//create will return root value of tree which will be assign to root pointer
 }
