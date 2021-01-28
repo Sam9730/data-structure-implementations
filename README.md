@@ -38,4 +38,4 @@ The programming language used to implement these sorting algorithms is C++.
 * [Depth First Search (DFS) Traversal](https://github.com/sameerkhan97/data-structure-implementations/blob/master/GRAPH%20---DFS%20using%20adjency%20matrix.cpp)
 
 # HASH TABLE
-* [All Operations](https://github.com/sameerkhan97/data-structure-implementations/blob/master/Insert%2CDelete%2CSearch%20%20in%20HASH%20TABLE.cpp)
+* [All Operations](https://github.com/sameerkhan97/data-structure-implementations/blob/master/HASH%20TABLE%20Insert%2CDelete%2CSearch.cpp)
