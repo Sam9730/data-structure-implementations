@@ -29,7 +29,7 @@ void peek(){	//prints top element of a stack
 }
 void display(){
 	if(top==-1)
-		cout<<"\n\t!!! STACK UNDERFLOW !!!";
+		cout<<"\n\t!!! STACK UNDERFLOW  !!!";
 	else
 	{
 		int i;
