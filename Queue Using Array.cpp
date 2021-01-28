@@ -31,7 +31,7 @@ void peek(){	//prints the top(first added) element of the Queue
 		cout<<"\nTop Element : "<<q[front];
 }
 void display(){
-	if(front==-1 || front==rear) 
+	if(front==-1 || front==rear)  
 		cout<<"\n\t!!! Queue UNDERFLOW !!!";
 	else
 	{
