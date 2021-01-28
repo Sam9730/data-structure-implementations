@@ -22,6 +22,6 @@ node* creat(){
 	return newnode;
 }
 int main(){
-	node *root=0;	//created root pointer for tree	
+	node *root=0;	.//created root pointer for tree	
 	root=creat();	//create will return root value of tree which will be assign to root pointer
 }
