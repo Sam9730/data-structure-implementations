@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
-int *stack,n;
+int *stack,n;	//globally declaring stack so evry func use it without passing parameters,n-size of stack
 int top=-1;
 void push(){
-	if(top==n-1)
+	if(top==n-1)	//stack is full
 		cout<<"\n\t!!! STACK OVERFLOW !!!";
 	else
 	{
@@ -13,15 +13,15 @@ void push(){
 	}
 }
 void pop(){
-	if(top==-1)
+	if(top==-1)	//stack is empty
 		cout<<"\n\t!!! STACK UNDERFLOW !!!";
 	else
 	{
 		cout<<"\n"<<stack[top]<<" removed from STACK. ";
 		top--;
 	}
-}
-void peek(){
+}	
+void peek(){	//prints top element of a stack 
 	if(top==-1)
 		cout<<"\n\t!!! STACK UNDERFLOW !!!";
 	else
