@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-int q[5];
-int front=-1,rear=0;
+int q[5];	//globally declaring stack so evry func use it without passing parameters,n-size of stack
+int front=-1,rear=0;//from rear end-dat 
 void push(){
 	if(rear==5)
 		cout<<"\n\t!!! Queue is OVERFLOW !!!";
@@ -15,7 +15,7 @@ void push(){
 	}
 }
 void pop(){
-	if(front==-1 || front>=rear)
+	if(front==-1 || front>=rear)	//front==-1 to check if theres no element,front>=rear to check if all elements are deleted
 		cout<<"\n\t!!! Queue is UNDERFLOW !!!";
 	else
 	{
@@ -24,7 +24,7 @@ void pop(){
 		front++;
 	}
 }
-void peek(){
+void peek(){	//prints the top(first added) element of the Queue
 	if(front==-1 || front>=rear)
 		cout<<"\n\t!!! Queue UNDERFLOW !!!";
 	else
