@@ -27,7 +27,7 @@ void insertAfter(node** head){	//insert node after a specific position
 		{
 			temp=temp->next;
 			count++ ;
-		}//temp will reach to ith position(after which we need to add newnode)
+		}	//temp will reach to ith position(after which we need to add newnode)
 		newnode->next=temp->next;
 		temp->next=newnode;
 		cout<<"\nNode added \n";
