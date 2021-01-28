@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int *arr,s;
+int *arr,s;	//declaring array globally so every function can use it without passing parameters
 void update(){
 	int i,n;
 	cout<<"\nEnter element to be updated in array : ";cin>>n;
@@ -16,7 +16,7 @@ void update(){
 	if(i==s)
 		cout<<"\n"<<n<<" not found !!!";
 }
-void Delete(){
+void Delete(){//func will search for element and then assign 0 value at its position
 	int n,i;
 	cout<<"\nEnter element to be deleted in array : ";cin>>n;
 	for( i=0;i<s;i++)
@@ -51,9 +51,9 @@ void display(){
 		cout<<arr[i]<<" ";
 }
 int main() {
-	int ch;
+	int ch;	//ch-take user's choice 
 	cout<<"\nEnter Array Size : ";cin>>s;
-	arr=new int(s);
+	arr=new int(s);	
 	cout<<"\nEnter Array Elements : ";
 	for(int i=0;i<s;i++){
 		cin>>arr[i];
