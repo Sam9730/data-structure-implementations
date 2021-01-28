@@ -30,7 +30,7 @@ void insertAt(node** head){
 		node *temp=*head,*prev;
 		while(c<pos)
 		{
-			prev=temp;
+			prev=temp; 
 			temp=temp->next;
 			c++;
 		}	//temp will reach to desired position(pos) and prev will point to its previous node
