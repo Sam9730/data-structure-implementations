@@ -14,7 +14,7 @@ void push(node** head){	//recieve address of head pointer using double pointer r
 	cout<<"\nLink added at start \n";
 }
 void insertAfter(node** head){	//insert node after a specific position
-	int i,count=1; //count-count the no. of node present in linked list
+	int i,count=1; //count-count the no. of node passed to reach the required position in linked list
 	node *temp=*head;;
 	cout<<"\nEnter position after which you wantto insert data";cin>>i;
 	if(i<0){
@@ -39,7 +39,7 @@ void append(node** head){	//insert node @ end
 	cout<<"\nEnter Data\t";cin>>newnode->data;
 	while(temp->next!=0){
 		temp=temp->next;
-	}			//temp will reach to end node
+	}			//temp will point to end node
 	newnode->next=0;
 	temp->next=newnode;	//last node's next pointer will point newnode i.e newnode will become last node
 	cout<<"\nNode added \n";
@@ -58,7 +58,7 @@ void deleteNode(node** head){//take key data from user & search if it is present
 	if(temp==0)	//if temp reaches end and key data isn't found
 		return ;
 	pre->next=temp->next;
-	delete temp;	//the the node that temp pointer is pointing
+	delete temp;	//the node having key data & that temp pointer is pointing will be deleted
 	cout<<"\nNode DELETED";
 }
 void reverse(node** head){
